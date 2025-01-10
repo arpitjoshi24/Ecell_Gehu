@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./images/logo1.jpg" type="image/x-icon">
+
+    <title>Entrepreneurship cell</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary:"#243137ff",
+                secondary:"#BD9F67 ",
+              }
+            }
+          }
+        }
+      </script>
+      
+</head>
+<body>
+    <!-- nav sec -->
+    <header>
+        <nav class="flex justify-between items-center text-secondary px-6 py-4 bg-primary">
+            <!-- Logo and title -->
+            <div class="flex items-center space-x-4">
+                <img src="images/logo1.jpg" alt="Logo" width="50" height="50" class="inline-block">
+                <a href="#" class="text-xl font-semibold cursor-pointer">Entrepreneurship Cell</a>
+            </div>
+            <!-- Navigation links -->
+            <div>
+                <ul class="hidden md:flex gap-8">
+                  <a href="index.html">  <li class="text-xl  hover:underline cursor-pointer">Home</li></a>
+                   <a href="event2.html"> <li class="text-xl hover:underline cursor-pointer">Events</li></a>
+                </ul>
+                
+                <!-- Hamburger menu for mobile -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile menu  -->
+        <div id="mobile-menu" class="md:hidden bg-primary text-secondary px-6 py-4 hidden">
+            <ul class="space-y-4">
+              <a href="index.html"> 
+                <li class=" cursor-pointer">Home</li>
+              </a>
+                <a href="event2.html">
+                  <li class=" cursor-pointer">Events</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+ <!-- hero sec -->
+ <section class="relative text-white h-screen flex  justify-center overflow-hidden">
+    <!-- Video Background -->
+    <video src="./images/hero.mp4" loop autoplay muted class="absolute top-0 left-0 w-full h-full object-cover -z-10"></video>
+    
+    <!-- Text Overlay -->
+    <div class="relative z-10 text-center">
+        <p class=" text-3xl md:text-8xl pt-48 font-bold">Entrepreneurship Cell</p>
+        <p class="text-3xl md:text-7xl mt-2">Gehu Bhimtal</p>
+    </div>
+</section>
+
+<!-- about -->
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="./images/team.JPG">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="text-2xl font-bold leading-none sm:text-5xl text-secondary text-center my-6">About Us
+        
+        </h1>
+        <p class="mb-8 leading-relaxed md:mr-24">It aims to cultivate innovation, creativity, and leadership by providing a platform for budding entrepreneurs to explore their ideas and transform them into viable business ventures.
+
+            The E-Cell organizes various events, workshops, and competitions, such as business plan contests, startup weekends, and guest lectures by industry experts, to enhance students' entrepreneurial skills.</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- our mission -->
+  <section>
+    <section class="text-white body-font bg-[#243137ff]">
+      <div class="container item-around gap-12 flex px-5 py-24 md:flex-row flex-col items-center">
+        
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font text-bold text-5xl mb-4 font-medium text-[#BD9F67]">Our Mission</h1>
+          <p class="mb-8 leading-relaxed text-white">At the Entrepreneurship Cell (E-Cell), we aim to inspire, support, and empower the next generation of entrepreneurs. Through innovation, collaboration, and hands-on experiences, we are dedicated to helping students turn their startup ideas into reality. Here's how we make a difference:</p>
+  
+          <p class="my-6" data-aos="flip-down" data-aos-delay="100"> <span class="text-semibold text-2xl text-[#BD9F67]">1. Fostering Entrepreneurial Mindset -</span> <br>
+            Our goal is to nurture an entrepreneurial spirit among students. We provide platforms, resources, and workshops that help students think creatively, take risks, and develop innovative solutions to real-world problems.
+          </p>
+  
+          <p class="my-6" data-aos="flip-down" data-aos-delay="300"> <span class="text-semibold text-2xl text-[#BD9F67]">2. Building a Collaborative Ecosystem -</span> <br>
+            We connect aspiring entrepreneurs with mentors, industry experts, and like-minded peers. Through networking events, competitions, and hackathons, we create a vibrant ecosystem for collaboration, learning, and growth.
+          </p>
+  
+          <p class="my-6" data-aos="flip-down" data-aos-delay="500"> <span class="text-semibold text-2xl text-[#BD9F67]">3. Empowering Startups with Resources -</span> <br>
+            We provide essential resources such as workshops, funding support, and business incubation to help students bring their ideas to life. Whether you're looking for seed funding, mentorship, or a collaborative workspace, E-Cell is here to support your journey.
+          </p>
+  
+        </div>
+  
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10">
+          <img class="object-cover object-center rounded w-96 h-96" alt="hero" src="./images/mission.jpg">
+        </div>
+      </div>
+    </section>
+  </section>
+  
+
+  <!-- our collabs -->
+
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold leading-none sm:text-5xl text-secondary text-center my-6"> collaborations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Event Card 1 -->
+            <div class="bg-[#243137ff] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-down" data-aos-delay="100">
+                <img src="./images/IItB.jpeg " alt="Event 1" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">IIT Bombay</h3>
+                    <p class="text-white mt-2">Collaborated with IIT Bombay to provide students with insights into business and investment strategies. Empowering entrepreneurial skills through expert-led workshops.</p>
+
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="bg-[#243137ff] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-down" data-aos-delay="200">
+                <img src="./images/IITM.jpeg" alt="Event 2" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">IIT Madaras</h3>
+                    <p class="text-white mt-2">Partnership with IIT Madras for fostering innovative ideas and cutting-edge technological advancements. Bridging the gap between technology and entrepreneurship</p>
+       
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="bg-[#243137ff] rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-down" data-aos-delay="300">
+                <img src="./images/iitk.jpg" alt="Event 3" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">IIM Kashipur</h3>
+                    <p class="text-white">Joined hands with IIM Kashipur to deliver impactful sessions on management and leadership. Enabling students to excel in decision-making and strategic planning.</p>
+                  
+           
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="bg-[#243137ff]  rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="400">
+                <img src="./images/wadwani.jpeg" alt="Event 4" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">WADHWANI FOUNDATION</h3>
+                    <p class="text-white mt-2">Collaboration with Wadhwani Foundation to support startups and promote entrepreneurial education. Helping young innovators turn their ideas into reality</p>
+             
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="bg-[#243137ff]  rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="500">
+                <img src="./images/interaction.jpeg" alt="Event 5" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">Interaction with Mrs. Vinita Joseph</h3>
+                    <p class="text-white mt-2">Engaged with Mrs. Vinita Joseph for an enriching session on entrepreneurial leadership and problem-solving strategies. A platform for students to gain practical knowledge.</p>
+                 
+                </div>
+            </div>
+
+            <!-- Event Card 6 -->
+            <div class="bg-[#243137ff]  rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105" data-aos="zoom-in-up" data-aos-delay="600">
+                <img src="./images/about.jpg" alt="Event 6" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-[#BD9F67]">Hands on innovative sessions</h3>
+                    <p class="text-white mt-2">In partnership with our esteemed Head of Department (HOD) of B.Tech, our experienced seniors, and the ex-core members of Ecell, this session is designed to provide real-world insights and skill-building opportunities.
+                    </p>
+        
+                </div>
+            </div>
+     </div>  
+        </div>
+    </div>
+</section>
+
+<!-- our mentors -->
+<section class="text-gray-600 body-font bg-primary py-12">
+  <h3 class="text-2xl font-bold leading-none sm:text-5xl text-secondary text-center">Our Mentors</h3>
+  <div class="flex justify-center py-12">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6  mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="./images//mentor.jpg">
+      <p class="text-white text-center text-3xl py-5">Utkarsh Agarwal & Ayush Arya</p>
+    </div>
+  </div>
+   
+    
+</section>
+<!-- our team -->
+<section class="py-6 text-white bg-primary">
+    <div class="container p-4 mx-auto space-y-16 sm:p-10">
+        <div class="space-y-4">
+            <h3 class="text-2xl font-bold leading-none sm:text-5xl text-secondary text-center">Meet our team</h3>
+            <p class="text-center">Meet our passionate team driving innovation, creativity, and excellence in every project we undertake.</p>
+        </div>
+        <div id="team-cards" class="grid  w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Team member cards will be injected here by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<script>
+    // Array of team members
+    const teamMembers = [
+        { name: "Mr. Navneet Kweera", role: "Head", imgSrc: "./images/head12.jpg" },
+        { name: "Ms. Simran Verma ", role: "Head", imgSrc: "./images/head.jpg" },
+        { name: "Ms. Bhoomika pandey", role: "Vice Head", imgSrc: "./images/vice-head.jpg" },
+        { name: "Mr. Sourav tiwari", role: "Vice Head", imgSrc: "./images/vicehead.jpg" },
+        { name: "Mr. Arpit joshi", role: "Secaratary", imgSrc: "./images/secaratory.jpg" },
+        { name: "Ms. Muskan Rawat", role: "Editor/Designer", imgSrc: "./images/editor1.jpg" },
+        { name: "Ms. Himani Upadhyay", role: "Web Developer", imgSrc: "./images/developer.jpg" },
+        { name: "Ms. Laxita Darmwal", role: "Developer", imgSrc: "./images/content.jpg" },
+        { name: "Ms. Harshita Mahtolia", role: "Event Manager", imgSrc: "./images/event_manager.jpg" },
+        { name: "Ms. Deepak Aithani", role: "Event Manager", imgSrc: "./images/eventm1.jpg" },
+        { name: "Ms. Saurav Koranga", role: "Event Manager", imgSrc: "./images/event3m.jpg" },
+        { name: "Ms. Jayanti", role: "Event Manager", imgSrc: "./images/event2m.jpg" },
+    ];
+
+    // Container for the team cards
+    const teamContainer = document.getElementById('team-cards');
+
+        // Generate cards for each team member with AOS attributes
+        teamMembers.forEach((member, index) => {
+            const card = document.createElement('div');
+            card.classList.add('space-y-4');
+            
+            // Set data-aos and data-aos-delay attributes
+            card.setAttribute('data-aos', 'zoom-in-up');
+            card.setAttribute('data-aos-delay', `${100 * (index + 1)}`); // Increment delay by 100ms for each card
+
+            card.innerHTML = `
+               <div class="flex flex-col items-center justify-center">
+  <img alt="${member.name}" 
+       class="object-cover h-72 w-56 mb-4 rounded-sm dark:bg-gray-500" 
+       src="${member.imgSrc}">
+  <div class="flex flex-col items-center">
+    <h4 class="text-xl text-secondary font-semibold">${member.name}</h4>
+    <p class="text-md ">${member.role}</p>
+  </div>
+</div>
+
+`;
+            teamContainer.appendChild(card);
+    });
+</script>
+ 
+
+ <!-- event gallery -->
+ <section class="text-gray-600 body-font  py-12">
+    <h1 class="text-2xl font-bold leading-none sm:text-5xl text-secondary text-center">Event gallery </h1>
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      
+        
+    
+      
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/event3.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/event4.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/event1.JPG">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/event2.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/event5.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/event6.JPG">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- footer -->
+<footer class=" shadow bg-[#243137ff] ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="./images/logo1.jpg" class="h-12" alt=" Logo" />
+                <span class="self-center text-2xl md:text-4xl font-semibold whitespace-nowrap text-[#BD9F67]">Entrepreneurship Cell</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-[#BD9F67] sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="./about_us.html" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 sm:mx-auto text-black lg:my-8" />
+        <span class="block text-sm  sm:text-center text-white">© 2024 <a href="#" class="hover:underline">Ecell</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
+
+
+
+
+  
+        
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

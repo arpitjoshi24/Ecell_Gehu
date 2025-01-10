@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/logo1.jpg" type="image/x-icon">
+    <title>Entrepreneurship Cell - Events</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#243137ff",
+                        secondary: "#BD9F67",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <header>
+        <nav class="flex justify-between items-center text-secondary px-6 py-4 bg-primary">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo1.jpg" alt="Logo" class="w-12 h-12 object-contain">
+                <a href="#" class="text-xl font-semibold cursor-pointer">Entrepreneurship Cell</a>
+            </div>
+            <div>
+                <ul class="hidden md:flex gap-8">
+                    <a href="index2.html"><li class="text-xl hover:underline cursor-pointer">Home</li></a>
+                    <a href="event2.html"><li class="text-xl hover:underline cursor-pointer">Events</li></a>
+                </ul>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="mobile-menu" class="md:hidden bg-primary text-secondary px-6 py-4 hidden">
+            <ul class="space-y-4">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">Events</li>
+            </ul>
+        </div>
+    </header>
+   
+    <h1 class="text-center text-secondary text-4xl md:text-6xl my-8 md:my-12 underline">EVENTS</h1>
+   
+    <div id="event-container" class="p-4 md:p-6 space-y-6 max-w-7xl mx-auto"></div>
+
+    <footer class="shadow bg-primary mt-12">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3">
+                    <img src="./images/logo1.jpg" class="h-12" alt="Logo" />
+                    <span class="self-center text-2xl md:text-4xl font-semibold whitespace-nowrap text-secondary">Entrepreneurship Cell</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-secondary sm:mb-0">
+                    <li><a href="./about_us.html" class="hover:underline me-4 md:me-6">About</a></li>
+                    <li><a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline me-4 md:me-6">Licensing</a></li>
+                    <li><a href="./contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-600 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-white sm:text-center">© 2024 <a href="#" class="hover:underline">Ecell</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        const events = [
+            {
+                title: 'IdeaThon 2024',
+                date: '25-09-2024',
+                location: 'Seminar Hall',
+                description: 'The Idea-Thon💡2024 organised by the ECELL on 25th of September was the ocean of knowledge and information about the world of Entrepreneurship which was an mesmerizing event to ideate, innovate, and inspire! Every student was given the oppurtunity to share their ideas and innovations.',
+                img: "./images/1.jpg"
+            },
+            {
+                title: 'Induction Program',
+                date: '13-08-2024',
+                location: 'Seminar Hall',
+                description: 'This event was organised to introduce ourselves to the freshers. Entrepreneurship cell is a dynamic community that fosters innovation, creativity, and entrepreneurial spirit by empowering members to develop, launch the ideas of young minds.',
+                img: "./images/2.jpg"
+            },
+            {
+                title: 'Interaction with Mrs. Vinita Joseph',
+                date: '20-09-2023',
+                location: 'Seminar Hall',
+                description: 'Ms. Vinitha Joseph, CEO, BluePurple Management Consulting Pvt Ltd. was invited by the GEHU Bhimtal campus to interact with the students and share her experiences with them. Her journey, from humble beginnings to serving as a mentor for numerous organizations, was a testament to her perseverance and hard work.',
+                img: "./images/3.jpg"
+            },
+            {
+                title: 'National Entrepreneurship Challenge by IITB',
+                date: '13-08-2023',
+                location: 'Online',
+                description: 'The ECELL members got selected for the National Entrepreneurship Challenge initiated by IIT Bombay! It\'s a remarkable achievement that showcases our dedication and entrepreneurial spirit. With 30 members representing our team, we\'re poised for an incredible journey ahead.',
+                img: "./images/4.jpg"
+            },
+            {
+                title: 'Workshop on VR technology',
+                date: '06-08-2023',
+                location: 'Seminar Hall',
+                description: 'The ECELL conducted a workshop on VR Technology featuring Mr. Srinivasan, the visionary Founder and CEO of GRAHA\'S VR. This event was nothing short of a triumph. Mr. Srinivasan\'s immersive workshop not only explained the intricacies of VR but also gave our students the chance to step into the metaverse themselves.',
+                img: "./images/5.jpg"
+            },
+            {
+                title: 'Entrepreneurship Webinar',
+                date: '06-05-2023',
+                location: 'Online',
+                description: 'Mr Vaibhav gupta co-head of E-cell, NIT jalandhar who is also an product manager @mokkup.ai for an exciting online session about early age startups and entrepreneurship at the college level. We had the chance to learn from a leader in the field and get inspired to start our own journey as an entrepreneur.',
+                img: "./images/6.jpg"
+            }
+        ];
+
+        const eventContainer = document.getElementById('event-container');
+        events.forEach(event => {
+            const eventHTML = `
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12 p-4 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-full lg:w-1/3 flex-shrink-0">
+                        <img src="${event.img}" alt="${event.title}" class="w-full h-64 lg:h-80 object-cover rounded-lg">
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-2">${event.title}</h2>
+                        <div class="flex flex-col md:flex-row gap-2 md:gap-6 text-gray-600 mb-4">
+                            <p class="flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                ${event.location}
+                            </p>
+                            <p class="flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                ${event.date}
+                            </p>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed">${event.description}</p>
+                    </div>
+                </div>
+            `;
+            eventContainer.innerHTML += eventHTML;
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
